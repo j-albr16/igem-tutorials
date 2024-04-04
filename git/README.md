@@ -74,7 +74,7 @@ git revert HEAD
 
 Gehe in den Git Graph und klicke auf den letzten commit. Mache einen Rechtsklick und gehe dann auf *revert*.
 
-8. **reset** den revert
+8. ***reset* den revert**
 
 Folgender Befehl setzt den letzten revert zurück:
 
@@ -87,11 +87,19 @@ In VSCode kannst du den vorletzten commit im Git Graph auswählen und dann auf d
 
 > **Hinweis:** Die Verwendung der `--hard` Options beim reset Befehl ist gefährlich, da alle Änderungen verloren gehen. Verwende diesen Befehl nur, wenn du dir sicher bist, dass du alle Änderungen verwerfen möchtest. Wenn du dir nicht sicher bist, verwende `--soft` oder `--mixed`. Analoge optionen gibt es auch im Git Graph in VSCode.
 
-9. **push** deine Änderungen
+9. ***push* deine Änderungen**
 
 ```bash
 git push origin <branch-name>
 ```
+
+oder 
+
+```bash
+git push --set-upstream origin <branch-name>
+```
+
+In VSCode kannst du auf das *push* Icon in der Status Bar klicken.
 
 ### Branching
 
@@ -112,5 +120,23 @@ git push origin <branch-name>
 5. **Wechsle zurück zum `main` Branch**
 
 6. **Merge den `feature` Branch in den `main` Branch**
+
+
+### Konflikte
+
+1. **Wechsel zu der Branch `feature_demo`**
+2. **Merge die Branch `feature_conflict` in die Branch `feature_demo`**
+
+```bash
+git merge feature_conflict
+```
+
+in VSCode kannst du den Merge auch über das Source Control Panel machen. Klicke hierfür auf den Merge Button.
+
+
+3. **Löse den Konflikt**
+
+4. **Committe deine Änderungen**
+
 
 
