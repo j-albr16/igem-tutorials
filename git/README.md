@@ -134,7 +134,12 @@ in VSCode kannst du auf das Branch Icon in der Status Bar klicken und dann den `
 6. **Merge den `feature` Branch in den `main` Branch**
 
 ```bash
-git merge feature
+git merge feature 
+```
+um die commits zusammenzuführen kannst du auch folgenden Befehl verwenden:
+
+```bash
+git merge --squash feature
 ```
 
 in VSCode kannst du im Git Menü oben rechts auf die drei Punkte klicken, dann auf *Branch* und dann auf *Merge* klicken. Wähle den `feature` Branch aus.
