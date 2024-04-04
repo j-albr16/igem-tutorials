@@ -10,6 +10,12 @@ Installiere dir folgende Extensions für VSCode:
 - Git Blame (wer hat was zuletzt geändert)
 - Git Graph (zeigt dir den Verlauf deines Projekts)
 
+## Installation
+
+```bash
+git clone https://j-albr16/igem-tutorials.git
+```
+
 ### Basic Git Befehle
 
 1. **Erstelle und wechsel zu einer neuen Branch**
@@ -146,6 +152,10 @@ in VSCode kannst du den Merge auch über das Source Control Panel machen. Klicke
 
 
 3. **Löse den Konflikt**
+
+Gehe in VSCode im Git Menü auf das File mit dem Konllikt und wähle den Konflikt Editor aus. Löse den Konflikt und speichere das File.
+
+![merge](images/merge.png)
 
 4. **Committe deine Änderungen**
 
