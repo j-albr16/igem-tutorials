@@ -26,11 +26,11 @@ In der command line kannst du folgenden Befehl verwenden:
 git checkout -b <new-branch-name>
 ```
 
-Klicke in VSCode auf das Branch Icon in der Status Bar und wähle dann *Create new branch*. Gebe den Namen des neuen Branches ein und drücke Enter. Im Branch Icon sollte jetzt der neue Branch Name angezeigt werden.
+Klicke in VSCode auf das Branch Icon in der Status Bar und wähle dann *Create new branch* aus. Gebe den Namen der neuen branch ein und drücke Enter. Im Branch Icon sollte jetzt der neue Branch Name angezeigt werden.
 
 ![branch](./images/branch_icon.png)
 
-In VSCode kannst du die Branches über das Source Control Panel wechseln. Klicke hierfür auf den Branch Namen und wähle dann den gewünschten Branch aus.
+In VSCode kannst du die Branches über das Source Control Panel wechseln. Klicke hierfür auf den Branch Namen und wähle dann die gewünschte branch aus.
 
 2. **Erstelle ein File mit dem Namen `example.md`**
 
