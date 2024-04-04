@@ -87,6 +87,11 @@ In VSCode kannst du den vorletzten commit im Git Graph auswählen und dann auf d
 
 > **Hinweis:** Die Verwendung der `--hard` Options beim reset Befehl ist gefährlich, da alle Änderungen verloren gehen. Verwende diesen Befehl nur, wenn du dir sicher bist, dass du alle Änderungen verwerfen möchtest. Wenn du dir nicht sicher bist, verwende `--soft` oder `--mixed`. Analoge optionen gibt es auch im Git Graph in VSCode.
 
+9. **push** deine Änderungen
+
+```bash
+git push origin <branch-name>
+```
 
 ### Branching
 
