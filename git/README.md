@@ -74,6 +74,8 @@ git revert HEAD
 
 Gehe in den Git Graph und klicke auf den letzten commit. Mache einen Rechtsklick und gehe dann auf *revert*.
 
+![revert](images/revert.png)
+
 8. ***reset* den revert**
 
 Folgender Befehl setzt den letzten revert zurück:
@@ -119,8 +121,17 @@ In VSCode kannst du auf das *push* Icon in der Status Bar klicken.
 
 5. **Wechsle zurück zum `main` Branch**
 
+in VSCode kannst du auf das Branch Icon in der Status Bar klicken und dann den `main` Branch auswählen.
+
 6. **Merge den `feature` Branch in den `main` Branch**
 
+```bash
+git merge feature
+```
+
+in VSCode kannst du im Git Menü oben rechts auf die drei Punkte klicken, dann auf *Branch* und dann auf *Merge* klicken. Wähle den `feature` Branch aus.
+
+> **Hinweis:** Du kannst in VSCode auch *CTR-SHIFT-P* drücken und einen befehl eingeben.
 
 ### Konflikte
 
