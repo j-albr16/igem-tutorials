@@ -13,7 +13,7 @@ Installiere dir folgende Extensions für VSCode:
 ## Installation
 
 ```bash
-git clone https://j-albr16/igem-tutorials.git
+git clone https://github.com/j-albr16/igem-tutorials.git
 ```
 
 ### Basic Git Befehle
@@ -97,6 +97,8 @@ In VSCode kannst du den vorletzten commit im Git Graph auswählen und dann auf d
 
 9. ***push* deine Änderungen**
 
+> **Hinweis:** Um zu pushen, musst du die Berechtigung haben, auf das Repository zu pushen. Wenn du keine Berechtigung hast, kannst du einen Pull Request erstellen. Um die Authentifikation zu erleichern, kannst du einen SSH Key verwenden (siehe SSH Kapitel).
+
 ```bash
 git push origin <branch-name>
 ```
@@ -160,4 +162,21 @@ Gehe in VSCode im Git Menü auf das File mit dem Konllikt und wähle den Konflik
 4. **Committe deine Änderungen**
 
 
+## SSH Key
+
+1. **Erstelle einen SSH Key**
+
+```bash
+ssh-keygen -t ed25519"
+```
+
+2. **Füge den SSH Key zu deinem GitHub Account hinzu**
+
+Kopiere den inhalt des Files `~/.ssh/id_ed25519.pub` und füge ihn in deinem GitHub Account unter *Settings* -> *SSH and GPG keys* hinzu.
+
+3. **Ändere den Remote URL zu SSH**
+
+```bash
+git remote set-url origin git@github.com:j-albr16/igem-tutorials.git
+```
 
