@@ -29,7 +29,8 @@ Im Beispiel bedeutet dies, dass alle h1 Überschriften grün erscheinen werden.
 
 #### ID nutzen
 Der opening-tag eines html-elements kann mit einer id versehen werden
-    h2 id="einzigartig"> ... </h2>
+
+    <h2 id="einzigartig"> ... </h2>
 Diese kann in .css referenziert werden
 
     #einzigartig {color: ...}
