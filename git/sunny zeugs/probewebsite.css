@@ -1,0 +1,58 @@
+h1
+{ 
+    background-color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(31, 225, 9);
+    text-align: center;
+ }
+/* Verändern von h1
+    hintergrundfarbe
+    Schriftart
+    Schriftfarbe
+    Textausrichtung*/
+
+pre
+{
+    text-align: right;
+}
+
+
+    /* mit dem Punkt vor der Bezeichnung wird eine class definiert.
+    um die class auf ein Element in HTML anzuwenden, schreibt man in 
+    den entsprechenden html-start-tag class="(classname)"
+    Im bsp also <h1 class="div1"> */
+.div1 
+{
+    background-color: black;
+    color: antiquewhite;
+}
+
+.div2 
+{
+    background-image: url(https://www.creativefabrica.com/wp-content/uploads/2023/04/17/Dark-Background-67476995-1.png);
+    background-repeat: no-repeat;
+    color: antiquewhite;
+    align-content: center;
+}
+
+table, th, tr, td
+{
+    border: 1px antiquewhite;
+    text-align: center;
+}
+
+caption
+{
+    font-size: large;
+}
+
+a
+{
+    color: antiquewhite;
+}
+
+#cool
+{
+    float: right;
+}
+
