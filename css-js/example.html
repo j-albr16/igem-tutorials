@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Example Page for CSS and JS</title>
+
+        <!-- CSS -->
+        <style type="text/css" media="all">
+            .nav {
+                display: flex;
+                flex-direction: row;
+                background-color: green;
+                justify-content: space-evenly;
+            }
+
+            .column {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .nav-item {
+                padding: 10px;
+                margin: 10px;
+            }
+
+            .nav-item:hover {
+                background-color: yellow;
+            }
+
+            .wrapper {
+                width: 300px;
+                height: 300px;
+                margin: 0 auto;
+                background-color: red;
+            }
+
+            .block {
+                padding: 10px;
+                color: white;
+            }
+
+            .margin {
+                margin: 10px;
+            }
+
+            @media (max-width: 600px) {
+                .nav {
+                    flex-direction: column;
+                }
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="nav">
+            <div id="toggleMargin" class="nav-item">toggle Margin</div>
+            <div id="column" class="nav-item">toggle Column</div>
+            <div id="showText" class="nav-item">show Text</div>
+            <div class="nav-item">foo</div>
+        </div>
+
+        <div class="wrapper">
+            <div class="block">
+                some content
+            </div>
+        </div>
+
+        <script>
+            console.log('Hello iGEM 2024 Team!')
+
+            function someFunc() {
+
+                const someObject = {
+                    foo: 'bar',
+                    bar: () => {
+                        console.log('Hello iGEM 2024 Team!')
+                    }
+                }
+
+                someObject.bar();
+                return someObject;
+            }
+
+            const someObject = someFunc();
+            console.log(someObject.foo);
+        </script>
+
+        <script>
+            
+            const text = "Hello iGEM 2024 Team! We will win the competition!";
+
+            // select the element
+            const showTextBtn = document.getElementById('showText');
+            const block = document.querySelector('.block');
+            const toggleMarginBtn = document.getElementById('toggleMargin');
+            const columnBtn = document.getElementById('column');
+            const nav = document.querySelector('.nav');
+
+            function cleanAllIntervals() {
+                const intervalId = window.setInterval(function() {}, Number.MAX_SAFE_INTEGER);
+                for (let i = 1; i < intervalId; i++) {
+                    clearInterval(i);
+                }
+            }
+
+            function animateText(element) {
+                // reset text
+                element.innerHTML = '';
+
+                cleanAllIntervals();
+
+                // add character by character every seccond
+                let i = 0;
+                const interval = setInterval(() => {
+
+                    if (i < text.length) {
+                        element.innerHTML += text[i];
+                        i++;
+                    } else {
+                        clearInterval(interval);
+                    }
+                }, 500);
+            }
+
+            // add event listener
+            showTextBtn.addEventListener('click', () => {
+                animateText(block);
+            });
+
+            toggleMarginBtn.addEventListener('click', () => {
+                block.classList.toggle('margin');
+            });
+
+            columnBtn.addEventListener('click', () => {
+                nav.classList.toggle('column');               
+            });
+            
+        </script>
+    </body>
+</html>
